@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Rye');
+
+#kisu {
+ width: 80%;
+ height: 80%;
+}
+
+#kattik {
+ width: 80%;
+ height: 80%;
+}
+
+body {
+ color: black;
+ background-image: url("https://wallpapercave.com/wp/i9yFAPQ.png");
+ background-size: cover;
+ background-attachment: fixed;
+ cursor: url(kursorikuva.jpg), auto;
+}
+
+ @media screen and (min-width: 0px) and (max-width: 620px) {
+  #ots1 {
+   visibility: visible;
+   background-color: orangered;
+  }
+ }
+ @media screen and (min-width: 620px) and (max-width: 1200px) {
+  #ots1 {
+   visibility: visible;
+   background-color: lightcoral;
+  }
+ }
+ @media screen and (min-width: 1200px) {
+  #ots1 {
+   visibility: visible;
+   background-image: url("https://images8.alphacoders.com/475/thumb-1920-475508.jpg");
+  }
+}
+p {
+ color: black;;
+ /*background-image: url("https://images8.alphacoders.com/475/thumb-1920-475508.jpg");
+ background-attachment:fixed;*/
+ background-color: whitesmoke;
+ font-weight: bold;
+ font-variant: normal;
+ line-height: normal;
+ font-family: "Comic Sans MS", sans-serif;
+ text-align: justify;
+}
+h1 {
+ color: black;;
+ /*background-color: white;*/
+ background-attachment: fixed;
+ font-family:'Rye', cursive;
+ font-size: 90px;
+ text-align: center;
+ text-decoration: underline;
+ text-shadow: #ff00f7;
+}
+h2 {
+ color: black;;
+ background-color: white;
+ background-attachment: fixed;
+ font-family:'Rye', cursive;
+ font-size: 50px;
+ text-align: center;
+ letter-spacing: 20px;
+}
+h3 {
+ color: black;;
+ background-color: white;
+ background-attachment: fixed;
+ font-family:'Rye', cursive;
+ font-size: 30px;
+ text-align: left;
+ text-decoration: none;
+}
+blockquote {
+ background: deeppink;
+ border-left: 10px solid #ccc;
+ margin: 1.5em 10px;
+ padding: 0.5em 10px;
+ quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+ color: #ccc;
+ content: open-quote;
+ font-size: 4em;
+ line-height: 0.1em;
+ margin-right: 0.25em;
+ vertical-align: -0.4em;
+}
+blockquote p {
+ display: inline;
+}
+.topnav {
+ background-color: #000000;
+ overflow: hidden;
+}
+.topnav a {
+ float: left;
+ display: block;
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-family: 'Rye', cursive;
+ font-size: 30px;
+
+}
+.topnav a:hover {
+ background-color: #ddd;
+ color: #9c9c9c;
+}
+/*.topnav a:not(last-of-type):after{content:"|";}
+.topnav a:not(first-of-type):before{content:"<3"}*/
+
+.topnav a.active {
+ background-color: #4CAF50;
+ color: white;
+}
+
+
+

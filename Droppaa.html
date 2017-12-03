@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiputa</title>
+</head>
+<body ondrop="drop(event)" ondragover="allowDrop(event)">
+<script src="tahan.js"></script>
+<h1>Tiputa tiedosto tähän</h1>
+<pre id="kaunistaja"></pre>
+<script>
+    var hauska;
+    function allowDrop(ev) {ev.preventDefault();}
+    function drop(ev) {ev.preventDefault();
+
+    hauska = document.getElementById("kaunistaja");
+    var files = ev.dataTransfer.files;
+       // ev.target.appendChild(document.getElementById(files));
+
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            var lukija = new FileReader();
+            lukija.onload = function (e) {
+                var text = lukija.result;
+            hauska.innerHTML += (text);
+            };
+            lukija.readAsText(file, "utf-8");
+        }
+    }
+</script>
+
+</body>
+</html>
