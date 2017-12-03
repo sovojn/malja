@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>harjoitus</title>
+</head>
+<script
+        src="https://code.jquery.com/jquery-1.12.4.js"
+        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
+<script>
+    $( function () {
+        $('div li').css('color', '#ff00f7')
+        $ ('div p:even').css('color','#0c0')
+        $('li:even').css('color', '#00c')
+        $ ('div').next().css('background-color','#c00' )
+
+    });
+   $(function () {
+    var klikattu;
+    $('h2').on("click", (function () {
+        klikattu = $(this);
+        console.log(klikattu);
+        piilota(klikattu);
+    }));
+
+    function piilota(klikattu){
+        klikattu.css('color','red');
+        var piiloon = klikattu.next("p");
+        piiloon.toggleClass('piilossa');
+        $('.piilossa').css('display', 'none');
+        $(piiloon).not('.piilossa').css('display','block');
+    }});
+
+        /*$ ('h2').click(function () {
+           var klikattu = $(this);
+           var piilota = klikattu.next('p');
+           piilota.toggleClass('kukka');
+           $('.kukka').css('display' , 'none');
+
+           //console.log(klikattu.text())*/
+
+    //  var box =$('#box');
+    //$(document).click(function () {
+    //box.hide()
+    // });
+</script>
+<body>
+<h1>Harjoitus</h1>
+<div>
+    <h2>Alaotsikko</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores deleniti deserunt dolor doloremque, dolores
+        ducimus ea eum expedita impedit ipsam, labore libero maxime molestias nemo odit officia reprehenderit totam
+        veniam.</p>
+    <p>Exercitationem expedita non odit officiis placeat quidem repellat sapiente sunt ut voluptate. Commodi consectetur
+        delectus eligendi laboriosam nesciunt repellat unde. Adipisci autem dolorem eum iure labore natus nemo sunt
+        voluptas.</p>
+    <p>Accusamus accusantium aliquam aut autem cumque deleniti dicta distinctio ducimus est fuga hic impedit ipsa iure
+        magni modi nesciunt nihil non quam, quod repellendus sit tempore temporibus veritatis, voluptatibus
+        voluptatum?</p>
+    <ul>
+        <li>Lorem ipsum.</li>
+        <li>Nemo, quas.</li>
+        <li>At, nulla.</li>
+        <li>Repellat, sapiente!</li>
+        <li>Hic, perferendis?</li>
+        <li>Molestias, quibusdam?</li>
+        <li>Aliquam, error.</li>
+        <li>Aliquid, nam!</li>
+    </ul>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur ducimus eligendi expedita explicabo in
+    iste magni minus nemo nobis numquam perspiciatis quas quidem sit soluta veritatis vitae, voluptate voluptates.</p>
+<ul>
+    <li>Lorem ipsum.</li>
+    <li>Dolorum, eos!</li>
+    <li>Autem, vel?</li>
+    <li>Dolorum, sit.</li>
+</ul>
+<h3>Lisää alaotsikkoa</h3><p class="foo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cum, deleniti doloremque eaque error et
+    eveniet fugit harum ipsam maxime nam praesentium provident quas quisquam ratione, sint suscipit temporibus
+    voluptatem!</p>
+<h2>Vielä yksi</h2>
+<p class="foo">Accusantium animi assumenda blanditiis dicta distinctio dolores esse id ipsam itaque laborum libero modi
+    officiis, omnis qui quos rem rerum. Commodi eos nam nobis nulla pariatur perferendis quidem ratione veniam.</p>
+<p class="foo">Dolores earum impedit laboriosam modi obcaecati possimus reiciendis sit! Ad aliquam exercitationem iste
+    itaque maxime nemo pariatur provident quas ut! Distinctio dolorum laudantium magnam magni numquam quam quasi
+    suscipit veritatis!</p>
+<p class="foo">Debitis deleniti maxime mollitia voluptatem? Asperiores assumenda beatae blanditiis commodi dicta,
+    doloribus eveniet neque possimus quibusdam? A, accusantium amet culpa ex exercitationem illum, incidunt nemo, neque
+    non recusandae rem saepe?</p>
+<p class="foo">Accusantium assumenda aut commodi cum cupiditate, distinctio dolores ea eos error facere fuga impedit
+    ipsa iure laudantium natus odio optio pariatur perferendis porro praesentium recusandae rerum similique veritatis
+    voluptatibus voluptatum!</p>
+<ul>
+    <li>Tänään</li>
+    <li>ei sada</li>
+    <li>niin paljon kuin eilen</li>
+</ul>
+<!--script src="harjoitusjq.js"></script>
+<script>
+    //$('li').css('color', 'pink');
+</script-->
+</body>
+</html>
